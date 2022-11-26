@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/room_backgrounf"
+    android:layout_gravity="bottom"
+    >
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:backgroundTint="@color/colorBlack"
+
+        android:background="@drawable/ic_baseline_arrow_back_24"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:id="@+id/clubLayout"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clubName"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:text=""/>
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@color/colorBlack"
+            android:background="@drawable/ic_homeicon"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:text=""
+        android:id="@+id/roomName"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:id="@+id/description"
+        android:layout_marginBottom="35dp"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorGrey"/>
+
+    <!--  Started   -->
+    <RelativeLayout
+        android:id="@+id/roomStarted"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:background="@drawable/button"
+            android:id="@+id/joinRoom"
+            android:text="Join Room"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="40dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/not_selected_button"
+            android:id="@+id/whoIsInside"
+            android:text="Who's Inside"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/colorBlack"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+
+    <!-- Not Started Owner and Moderator Side  -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:background="@drawable/button"
+        android:id="@+id/getStarted"
+        android:text="Start Discussion"
+        android:visibility="gone"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:layout_height="40dp"/>
+
+
+
+
+</LinearLayout>

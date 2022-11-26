@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Room.textChannel">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:id="@+id/message"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        android:divider="@color/colorWhite"
+        android:layout_above="@+id/sendingLayout"
+        android:layout_marginBottom="10dp"
+        android:stackFromBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/sendingLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <EditText
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:textCursorDrawable="@null"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/sendingmessage"
+            android:hint="Type a message.."
+            android:padding="12dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/send"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/speaking"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="28.26dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_send"
+                android:backgroundTint="@color/colorWhite" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Pages.Help">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="backPressed"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/colorBlack"
+        android:background="@drawable/ic_baseline_arrow_back_24"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:textSize="18sp"
+        android:id="@+id/title"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:id="@+id/Description"
+        android:padding="10dp"
+        android:gravity="top|left"
+        android:background="@drawable/edit_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorBlack"/>
+</LinearLayout>

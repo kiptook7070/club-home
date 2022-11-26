@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@color/colorWhite"
+    android:id="@+id/roomLayout"
+    tools:context=".Room.RoomHome">
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--  full screen  -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            android:layout_margin="5dp"
+            android:background="@color/colorWhite"
+            android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="match_parent">
+               <TextView
+                   android:id="@+id/moderatorsText"
+                   android:text="Moderators  (12)"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginBottom="15dp"
+                   android:layout_marginTop="5dp"
+                   android:textSize="15sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <com.testing.clubhome.supporting.FullLengthListView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:scrollbars="none"
+                   android:layout_marginBottom="20dp"
+                   android:id="@+id/moderatorsList"
+                   android:divider="@color/colorWhite"/>
+
+               <TextView
+                   android:id="@+id/onStageText"
+                   android:text="On Stage  (12)"
+                   android:textSize="15sp"
+                   android:textColor="@color/colorBlack"
+                   android:visibility="gone"
+                   android:layout_marginBottom="15dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <com.testing.clubhome.supporting.FullLengthListView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:scrollbars="none"
+                   android:layout_marginBottom="20dp"
+                   android:id="@+id/onStageList"
+                   android:divider="@color/colorWhite"/>
+
+
+               <TextView
+                   android:id="@+id/raisedHandsText"
+                   android:text="Raised hand  (12)"
+                   android:textColor="@color/colorBlack"
+                   android:visibility="gone"
+                   android:layout_marginBottom="15dp"
+                   android:textSize="15sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <com.testing.clubhome.supporting.FullLengthListView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:scrollbars="none"
+                   android:layout_marginBottom="20dp"
+                   android:id="@+id/raisedHandList"
+                   android:divider="@color/colorWhite"/>
+
+               <TextView
+                   android:id="@+id/listenerText"
+                   android:text="Listener  (12)"
+                   android:visibility="gone"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginBottom="15dp"
+                   android:textSize="15sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <com.testing.clubhome.supporting.FullLengthListView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:scrollbars="none"
+                   android:layout_marginBottom="20dp"
+                   android:id="@+id/listenerList"
+                   android:divider="@color/colorWhite"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginTop="70dp"
+                   android:visibility="visible"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginBottom="50dp"
+                   android:id="@+id/nativeAd"
+                   android:paddingRight="20dp"
+                   android:paddingLeft="20dp"
+                   android:paddingTop="20dp"
+                   android:paddingBottom="20dp">
+               </LinearLayout>
+           </LinearLayout>
+       </ScrollView>
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/colorWhite"
+            android:layout_alignParentBottom="true">
+
+             <RelativeLayout
+                 android:id="@+id/raiseHandandaudio"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_centerInParent="true"
+                 android:background="@drawable/notificationdot"
+                 android:gravity="center"
+                 android:padding="5dp"
+
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toTopOf="parent">
+
+                 <ImageView
+                     android:layout_width="24.92dp"
+                     android:layout_height="35dp"
+                     android:id="@+id/rasinghand"
+                     android:layout_centerInParent="true"
+                     android:background="@drawable/ic_handraise"
+                     android:backgroundTint="#fff" />
+             </RelativeLayout>
+
+             <ImageView
+                 android:id="@+id/setting"
+                 android:layout_width="24.05dp"
+                 android:layout_height="20dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:background="@drawable/ic_up"
+                 android:backgroundTint="@color/colorBlack"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toEndOf="@+id/raiseHandandaudio"
+                 app:layout_constraintTop_toTopOf="parent" />
+
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</RelativeLayout>

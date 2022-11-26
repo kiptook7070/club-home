@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:padding="10dp"
+    android:background="@drawable/user_list_background"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+          android:layout_width="match_parent"
+
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/clubName"
+                  android:textColor="@color/colorBlack"
+                  android:text=""
+                  android:textSize="15sp"/>
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:orientation="horizontal">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/numberOfRooms"
+                      android:textColor="@color/colorBlack"
+                      android:text=""
+                      android:textSize="13sp"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/numberOfLiveRooms"
+                      android:layout_marginLeft="3dp"
+                      android:textColor="@color/colorMain"
+                      android:text=""
+                      android:textSize="13sp"/>
+              </LinearLayout>
+
+          </LinearLayout>
+
+
+
+      </RelativeLayout>
+    <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="14sp"
+          android:id="@+id/shortDiscription"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="10dp"
+          android:textColor="@color/colorGrey"
+          android:text=""/>
+    <TextView
+          android:layout_width="wrap_content"
+          android:layout_margin="10dp"
+          android:layout_height="wrap_content"
+          android:id="@+id/numberOfConnection"
+          android:textColor="@color/colorGrey"
+          android:text=""
+          android:textSize="13sp"/>
+
+
+
+</LinearLayout>

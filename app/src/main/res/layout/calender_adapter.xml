@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/user_list_background"
+    android:id="@+id/mainLayout"
+    android:elevation="0dp"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:text=""
+        android:id="@+id/roomName"
+        android:textColor="@color/colorBlack"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/time"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="11sp"
+        android:text="Today . 4:45 PM"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toollbar"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/clubLayout"
+        android:visibility="visible"
+        android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+
+            android:background="@drawable/tansparent_box"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_homeicon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/clubName"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+
+                android:text="noob"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@+id/im"
+        android:id="@+id/person"
+        android:text=""
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorMain"/>
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_below="@+id/roomName"
+        android:id="@+id/description"
+        android:text=""
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/colorGrey"/>
+
+
+        <Button
+            android:id="@+id/notify"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="13sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/selected_button"
+            android:text="Notify Me"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/room_people_box"
+    android:layout_gravity="bottom">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:backgroundTint="@color/colorBlack"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"/>
+    <LinearLayout
+        android:id="@+id/profile"
+        android:layout_below="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!--user profile photo-->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/profilePhoto"
+        android:src="@drawable/user"
+        app:shapeAppearanceOverlay="@style/CircularImage"
+        android:layout_gravity="center"
+        app:strokeWidth="0.5dp"
+        app:strokeColor="@color/colorDarkBlue"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/profile"
+        android:id="@+id/userName"
+        android:layout_marginTop="20dp"
+        android:text="aneesh"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@+id/userName"
+        android:id="@+id/userjob"
+        android:layout_marginTop="5dp"
+        android:text="work"
+        android:textSize="14sp"
+        android:textColor="@color/colorGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shortDiscription"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorBlack"
+        android:text="hello everone how do u do"
+        android:layout_below="@+id/connectionGroup"/>
+    <LinearLayout
+        android:id="@+id/connectionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/userjob">
+
+        <TextView
+            android:id="@+id/connections"
+            android:textSize="15sp"
+            android:text="0"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/connectionText"
+            android:textSize="15sp"
+            android:text=" Connections"
+            android:layout_width="wrap_content"
+
+            android:textColor="@color/colorGrey"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/club"
+            android:textSize="15sp"
+            android:text="0"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/clubsText"
+            android:textSize="15sp"
+            android:text=" Clubs"
+            android:layout_width="wrap_content"
+
+            android:textColor="@color/colorGrey"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/shortDiscription"
+        android:id="@+id/remove"
+        android:layout_marginTop="5dp"
+        android:text="Remove from club"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/tansparent_box"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@+id/remove"
+        android:id="@+id/owner"
+        android:layout_marginTop="15dp"
+        android:text="move to owner"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/tansparent_box"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@+id/owner"
+        android:id="@+id/onStageormoderator"
+        android:layout_marginTop="15dp"
+        android:text="move to Stage"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/tansparent_box"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@+id/onStageormoderator"
+        android:id="@+id/viewprofile"
+        android:layout_marginTop="15dp"
+        android:text="view profile"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:background="@drawable/tansparent_box"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

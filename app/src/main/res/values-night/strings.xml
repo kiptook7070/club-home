@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ClubHome</string>
+    <string name="back">back</string>
+    <string name="front">front</string>
+
+    <string name="app_playstore_link">#</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="agora_app_id">ff4231175efe4c8b9cf91fd7c971bd94</string>
+    <string name="agora_app_certificate">cc080bfb3c354287ad02fe6132c6e96c</string>
+
+
+    <!--ads-->
+    <string name="Interstial_app_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner_ads">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="native_ads">ca-app-pub-3940256099942544/2247696110</string>
+
+
+</resources>

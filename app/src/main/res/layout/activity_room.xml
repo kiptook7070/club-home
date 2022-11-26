@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+
+    android:id="@+id/roomLayout"
+    tools:context=".Room.room">
+
+    <!--  full screen  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fullscreen"
+        android:background="@color/colorWhite"
+
+        android:padding="10dp"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toollbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:id="@+id/back"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:backgroundTint="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/leaveTheRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="Leave"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/toollbar"
+            android:layout_marginTop="5dp"
+            android:id="@+id/top"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="25dp"
+                android:padding="8dp"
+                android:background="@drawable/tansparent_box"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/audioroom"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginRight="10dp"
+                    android:textSize="10sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="live"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/clubLayout"
+                android:padding="8dp"
+
+                android:background="@drawable/tansparent_box"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_homeicon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clubName"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10sp"
+                    android:layout_gravity="center_vertical"
+
+                    android:text=""/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:padding="8dp"
+
+                android:background="@drawable/tansparent_box"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/notificationdot"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/time"
+                    android:layout_marginRight="10dp"
+                    android:textSize="10sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="00:00"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:layout_below="@+id/top"
+            android:id="@+id/roomName"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/roomName"
+            android:id="@+id/description"
+            android:text=""
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorBlack"/>
+
+        <RelativeLayout
+            android:id="@+id/roomFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/description"
+            android:layout_marginLeft="5dp"
+            android:layout_above="@+id/descussionbar"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp">
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:id="@+id/descussionbar"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/todiscussion"
+                android:layout_width="25dp"
+                android:layout_gravity="center"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:rotation="90"
+                android:visibility="invisible"
+                android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:backgroundTint="@color/colorBlack" />
+            <TextView
+                android:id="@+id/discussionText"
+                android:text="Discussion"
+                android:visibility="visible"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/tostage"
+                android:layout_width="25dp"
+                android:layout_gravity="center"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:rotation="-90"
+                android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:backgroundTint="@color/colorBlack" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

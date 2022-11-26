@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Room.creaeRoom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorBlack"
+            android:background="@drawable/ic_baseline_arrow_back_24"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:background="@drawable/button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="Create"
+            android:id="@+id/createRoom"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a Room"
+                android:textSize="19sp"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a Room to share your interests, interact with people and many more."
+                android:textSize="13sp"
+                android:layout_marginTop="13sp"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="15sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/colorBlack"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name for the Room"
+                android:textCursorDrawable="@null"
+                android:padding="10dp"
+                android:id="@+id/roomName"
+                android:background="@drawable/edit_text"
+                android:textSize="15sp"
+                android:textColorHint="@color/colorGrey"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Description"
+                android:textSize="15sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/colorBlack"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1-line Description for the Club"
+                android:textCursorDrawable="@null"
+                android:padding="10dp"
+                android:background="@drawable/edit_text"
+                android:textSize="15sp"
+                android:textColorHint="@color/colorGrey"
+                android:id="@+id/shortDiscription"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBlack"/>
+
+
+            <LinearLayout
+                android:id="@+id/timeLayout"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date :"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/date"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/colorWhite"
+                        android:textColor="@color/colorBlack"
+                        android:text="12  /  12   /   2020"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time :"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:id="@+id/hour"
+                        android:textSize="15sp"
+
+                        android:layout_gravity="center_vertical"
+                        android:text="12  :  00"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+                        <LinearLayout
+                           android:layout_marginTop="35dp"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                            android:id="@+id/hostedby"
+                            android:visibility="visible"
+                           android:orientation="horizontal">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="30dp"
+                               android:layout_marginRight="15dp"
+                               android:text="Hosted by Club"
+                               android:gravity="center_vertical"
+                               android:layout_gravity="center_vertical"
+                               android:textSize="16sp"
+                               android:textColor="@color/colorBlack"/>
+                            <Spinner
+                                android:id="@+id/spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/edit_text"
+                                android:padding="4dp"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/privacyPolicy"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make this Group Private"
+                    android:id="@+id/privacyText"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"/>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_marginLeft="55dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/privacy"
+                    android:thumb="@drawable/custom_thub"
+                    app:track="@drawable/custom_track" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="You have 20 rooms this month purchase pro band for unlimited room"
+                android:id="@+id/purchase"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/colorMain"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

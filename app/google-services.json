@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "321495824916",
+    "project_id": "clubhome-4c7dc",
+    "storage_bucket": "clubhome-4c7dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321495824916:android:f28095cc5bb23c2bdcc501",
+        "android_client_info": {
+          "package_name": "com.testing.clubhome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321495824916-j0cpou120rq306a4vdtgsk2dq6o36vk1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.testing.clubhome",
+            "certificate_hash": "e4909cff0a58f548a9cadeee7e7845dacc83bf20"
+          }
+        },
+        {
+          "client_id": "321495824916-e2pimsv6jkrm2k8500n4phjfeo91sp3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXa6yNmQ4rF_63vwNOJbqI6boaSv3XOKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321495824916-e2pimsv6jkrm2k8500n4phjfeo91sp3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

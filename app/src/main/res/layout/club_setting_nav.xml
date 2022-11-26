@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="right"
+    android:layout_marginTop="300dp"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/colorBlack"
+        android:background="@drawable/ic_baseline_arrow_back_24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Admin Tools"
+        android:id="@+id/toolTest"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/toolTest"
+        android:background="@color/colorBlack"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <!--    row one        -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/invite"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorBlack"
+                        android:background="@drawable/ic_baseline_person_add_24"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Invite"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/reportGroup"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorBlack"
+                        android:background="@drawable/ic_baseline_report_24"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Report Club"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/share"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorBlack"
+                        android:background="@drawable/ic_twotone_share_24"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Share"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--    row two        -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/rules"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:background="@drawable/ic_baseline_book_24"
+                        android:backgroundTint="@color/colorBlack"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Rules"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/help"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorBlack"
+                        android:background="@drawable/ic_baseline_help_24"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Help"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/privacy"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorBlack"
+                        android:background="@drawable/ic_baseline_security_24"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--    row three        -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:id="@+id/lastRow"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/leaveClub"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorBlack"
+                        android:background="@drawable/ic_logout"
+                        android:layout_height="19dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp"
+                        android:text="Leave Club"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/editClub"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorBlack"
+                        android:background="@drawable/ic_baseline_settings_24"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Edit Club"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/makePrivate"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/ic_baseline_vpn_lock_24"
+                        android:backgroundTint="@color/colorBlack"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Make Club\nPrivate"
+                        android:gravity="center_horizontal"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

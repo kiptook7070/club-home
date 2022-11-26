@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".Club.EditClub">
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:onClick="backPressed"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/colorBlack"
+        android:background="@drawable/ic_baseline_arrow_back_24"/>
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="15sp"
+        android:text="Save"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/back">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Club Name"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/userName"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/colorGrey"
+                android:padding="10dp"
+                android:background="@drawable/edit_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Club Name"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Short Discription"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"/>
+            <EditText
+                android:background="@drawable/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/shortDiscription"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:maxLength="55"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/colorGrey"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:hint="eg  All about Clubhouse"
+                android:textColor="@color/colorBlack"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Description"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/bio"
+                android:background="@drawable/edit_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:textCursorDrawable="@null"
+                android:padding="10dp"
+                android:hint=""
+                android:maxLength="500"
+                android:textColor="@color/colorBlack"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make this Group Private"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack"/>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_marginLeft="55dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/privacy"
+                    android:thumb="@drawable/custom_thub"
+                    app:track="@drawable/custom_track" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

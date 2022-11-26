@@ -1,0 +1,25 @@
+<svg width="206" height="118" viewBox="0 0 206 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M197 35.5V76C197 80.4183 193.418 84 189 84H172.5" stroke="black" stroke-width="0.3" stroke-dasharray="2 3"/>
+<mask id="path-2-inside-1" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M173 11H15V111H24V118H164V111H173V11Z"/>
+</mask>
+<path d="M15 11V10H14V11H15ZM173 11H174V10H173V11ZM15 111H14V112H15V111ZM24 111H25V110H24V111ZM24 118H23V119H24V118ZM164 118V119H165V118H164ZM164 111V110H163V111H164ZM173 111V112H174V111H173ZM15 12H173V10H15V12ZM16 111V11H14V111H16ZM24 110H15V112H24V110ZM25 118V111H23V118H25ZM164 117H24V119H164V117ZM163 111V118H165V111H163ZM173 110H164V112H173V110ZM172 11V111H174V11H172Z" fill="black" mask="url(#path-2-inside-1)"/>
+<rect x="15.5" y="11.5" width="157" height="26" fill="#C4C4C4" stroke="black"/>
+<rect x="24.5" y="4.5" width="13" height="13" fill="#C4C4C4" stroke="black"/>
+<rect x="146.5" y="4.5" width="13" height="13" fill="#C4C4C4" stroke="black"/>
+<rect x="108.5" y="4.5" width="13" height="13" fill="#C4C4C4" stroke="black"/>
+<rect x="66.5" y="4.5" width="13" height="13" fill="#C4C4C4" stroke="black"/>
+<line x1="163" y1="110.5" x2="22" y2="110.5" stroke="black"/>
+<line x1="15" y1="25.5" x2="173" y2="25.5" stroke="black" stroke-dasharray="2 2"/>
+<circle cx="39.5" cy="60.5" r="1.5" fill="black"/>
+<circle cx="144.5" cy="60.5" r="1.5" fill="black"/>
+<line x1="81" y1="85.5" x2="106" y2="85.5" stroke="black"/>
+<rect x="194.5" y="26.5" width="4" height="9" rx="2" stroke="black"/>
+<circle cx="191" cy="31" r="3.5" stroke="black"/>
+<circle cx="202" cy="31" r="3.5" stroke="black"/>
+<line x1="198.372" y1="27.4212" x2="200.921" y2="24.8717" stroke="black"/>
+<line x1="194.921" y1="27.1283" x2="192.372" y2="24.5788" stroke="black"/>
+<line x1="12.5" x2="12.5" y2="7" stroke="black"/>
+<line x1="2.87864" y1="2.67159" x2="7.82839" y2="7.62134" stroke="black"/>
+<line x1="0.5" y1="13" x2="7.5" y2="13" stroke="black"/>
+</svg>
